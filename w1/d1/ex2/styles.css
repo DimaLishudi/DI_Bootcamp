@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 5vh;
+}
+
+#headerLink {
+    /* position: relative;
+    left: 15vw; */
+    display: inline-block;
+    position: relative;
+    left: 15vh;
+    top: 1vh;
+}
+
+a {
+    color: grey;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+button, input[type=submit] {
+    border-radius: 0.25rem;
+    height: 2rem;
+    background-color:dodgerblue;
+    color: white;
+    border: 0;
+}
+
+button {
+    position: relative;
+    top: 1vh;
+    height: 1.5rem;
+    margin-left: 70vh;
+    width: 5rem;
+}
+
+article {
+    margin-top: 0;
+    background-image: url("./images/sea.jpg");
+    height: 60vh;
+}
+
+section.mainBox {
+    margin: 0 auto;
+    position: relative;
+    top: 20vh;
+    /* margin */
+    text-align: center;
+    width: 60vw;
+    
+}
+
+.mainBox .title {
+    /* color: white; */
+    font-size: 3.5rem;
+}
+
+.mainBox.form {
+    color: grey;
+}
+
+input[type=text] {
+    border-radius: 0.25rem;
+    width: 20rem;
+    height: 2rem;
+    border: 0;
+    padding-left: 1rem;
+}
+
+input[type=submit] {
+    width: 7rem;
+}
+
+footer {
+    margin-left: 14vw;
+    margin-top: 10vh;
+    height: 25vh;
+    /* width: 100vw; */
+}
+
+.icon {
+    /* margin-top: 20px; */
+    font-size: 3rem;
+    color: darkcyan;
+}
+
+.card {
+    display: inline-block;
+    /* margin-top: 2vh; */
+    /* margin-bottom: 7vh; */
+    margin-left: 2vw;
+    width: 20vw;
+    margin-right: 2vw;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+    text-align:center;
+    /* text-justify: distribute; */
+}
+
+.card > .title {
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card > .text {
+    color:grey;
+}
