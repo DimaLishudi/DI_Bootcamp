@@ -7,8 +7,6 @@ header {
 }
 
 #headerLink {
-    /* position: relative;
-    left: 15vw; */
     display: inline-block;
     position: relative;
     left: 15vh;
@@ -48,7 +46,6 @@ section.mainBox {
     margin: 0 auto;
     position: relative;
     top: 20vh;
-    /* margin */
     text-align: center;
     width: 60vw;
     
@@ -79,26 +76,20 @@ footer {
     margin-left: 14vw;
     margin-top: 10vh;
     height: 25vh;
-    /* width: 100vw; */
-}
+    }
 
-.icon {
-    /* margin-top: 20px; */
-    font-size: 3rem;
+.icon {font-size: 3rem;
     color: darkcyan;
 }
 
 .card {
     display: inline-block;
-    /* margin-top: 2vh; */
-    /* margin-bottom: 7vh; */
     margin-left: 2vw;
     width: 20vw;
     margin-right: 2vw;
     margin-bottom: 3vh;
     font-size: 1rem;
     text-align:center;
-    /* text-justify: distribute; */
 }
 
 .card > .title {
