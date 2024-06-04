@@ -1,0 +1,22 @@
+.imageBlock {
+    display: block;
+    font-weight: 2;
+    text-align: center;
+}
+
+img {
+    border: 0.5em solid orangered;
+    height: 15em;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+td {
+    height: 4em;
+}
+
+th.mergedHeader {
+    color: red;
+}
