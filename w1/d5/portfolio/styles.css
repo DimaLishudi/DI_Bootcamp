@@ -1,0 +1,12 @@
+body {
+  font-family: "Quicksand", sans-serif;;
+  color: dark;
+  /* font-weight: 500; */
+}
+
+hr {
+  width: 80vw;
+  margin: auto;
+  /* margin-top: 2vh;
+  margin-bottom: 1vh; */
+}
