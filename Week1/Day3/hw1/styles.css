@@ -1,0 +1,29 @@
+body {
+  margin: 2px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.boxCol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.boxRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.square {
+  display: inline-block;
+  min-width: 100px;
+  aspect-ratio: 1 / 1;
+  outline: 5px solid black;
+  background-color: yellow;
+}
