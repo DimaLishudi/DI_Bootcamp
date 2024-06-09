@@ -137,6 +137,16 @@ print("Total price:", total_price)
 # Given a list of names, write a program that asks teenager for their age, if they are not permitted to watch the movie, remove them from the list.
 # At the end, print the final list.
 
+
+def CalcTicketPrice(age: int) -> int:
+    if age < 3:
+        return 0
+    if age <= 12:
+        return 10
+    else:
+        return 15
+
+
 total_cost: int = 0
 stop_word: str = "quit"
 while True:
@@ -144,12 +154,8 @@ while True:
     if cur_input == stop_word:
         break
     age: int = int(cur_input)
-    if age < 3:
-        continue
-    if age <= 12:
-        total_cost += 10
-    else:
-        total_cost += 15
+    total_cost += CalcTicketPrice(age)
+
 
 print("Tickets for the whole family will be:", total_cost)
 
