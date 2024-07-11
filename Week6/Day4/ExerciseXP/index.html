@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge: HTML Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="GET">
+            <p><label for="name1">Name</label><p>
+            <p><input type="text" name="name" id="name1" placeholder="Name"></p>
+            <p><label for="comments1">Comments</label><p>
+            <p><textarea type="text" class="bigFormInput" name="comments" id="comments1" placeholder="Leave your comments here..."></textarea></p>
+            <p><button type="submit">Send</button></p>
+        </form>
+
+        <!-- After GET we see query sent to index.html + queryparams -->
+
+        <form action="" method="POST">
+            <p><label for="name2">Name</label><p>
+            <p><input type="text" name="name" id="name2" placeholder="Name"></p>
+            <p><label for="comments2">Comments</label><p>
+            <p><textarea type="text" class="bigFormInput" name="comments" id="comments2" placeholder="Leave your comments here..."></textarea></p>
+            <p><button type="submit">Send</button></p>
+        </form>
+
+        <!-- After POST we see formData sent to index.html -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

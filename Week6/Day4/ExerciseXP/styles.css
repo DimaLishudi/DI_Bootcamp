@@ -1,0 +1,8 @@
+.bigFormInput {
+    min-height: 10vh;
+}
+
+.container {
+    display: flex;
+    gap: 2vh;
+}
