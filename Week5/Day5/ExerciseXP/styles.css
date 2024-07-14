@@ -1,0 +1,56 @@
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    /* margin: 0; */
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: grey;
+    height: 100vh;
+}
+
+
+#menu {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    gap: 1vh;
+}
+
+#clearDiv {
+    padding: 5px;
+}
+
+#clearBtn {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+
+#colorMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
+    padding: 5px
+}
+
+#colorMenu > div {
+    border: 1px black solid;
+}
+
+#drawGrid {
+    padding: 5px;
+    display: grid;
+    /* gap: 1px; */
+}
