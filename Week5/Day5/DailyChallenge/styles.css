@@ -1,0 +1,64 @@
+button {
+    border: none;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    /* margin: auto;
+    display: flex;
+    flex-direction: column; */
+    /* width: auto; */
+    width: 30vw;
+        /* border: 3px solid green;
+        padding: 10px; */
+}
+
+body {
+    background-color: blue;
+}
+
+#addForm {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    flex-direction: row;
+}
+
+input[name="text"] {
+    border: none;
+    /* width: 24vw; */
+    /* height: 1vh;
+    padding: 5px; */
+    margin: 0px;
+    background-color: white;
+    /* float: left; */
+}
+
+#addButton {
+    border: none;
+    /* width: 4vw; */
+    /* height: 2vh; */
+    padding: 0;
+    margin: 0;
+    color: blue;
+    background-color: white;
+}
+
+.delButton {
+    color: red;
+}
+
+.listTasks {
+    background-color: white;
+    margin-top: 5px;
+    /* width: 30vw; */
+    min-height: 15vh;
+}
+
+.todoTask {
+    float: left;
+    clear: both;
+}

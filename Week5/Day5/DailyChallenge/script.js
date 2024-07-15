@@ -30,7 +30,7 @@ const listTasksElement = document.getElementsByClassName("listTasks")[0]
 // a “X” button. Use font awesome for the “X” button.
 // an input type="checkbox". The label of the input is the task added by the user.
 
-function checkboxChange(event) {
+function doneTask(event) {
     event.preventDefault()
     const checkbox = event.target
     const id = checkbox.getAttribute("id").split("_")[1]
@@ -56,21 +56,31 @@ function addTask(event) {
         return
     }
     tasks.push(new Task(tasks.length, text))
-    
+
     // create checkbox
     const check_id = "checkbox_" + (tasks.length - 1).toString()
     const checkbox = document.createElement("input")
     checkbox.setAttribute("type", "checkbox")
     checkbox.setAttribute("id", check_id)
-    checkbox.addEventListener("change", checkboxChange)
+    checkbox.addEventListener("change", doneTask)
 
     // create checkbox label with text
     const label = document.createElement("label")
     label.setAttribute("for", check_id)
     label.innerHTML = text
     
+    // create x button
+    const icon = document.createElement("i")
+    icon.setAttribute("class", "fa-solid fa-square-xmark")
+    const button = document.createElement("button")
+    button.setAttribute("type", button)
+    button.setAttribute("class", "delButton")
+    button.appendChild(icon)
+
     // create div container
     const div = document.createElement("div")
+    div.setAttribute("class", "todoTask")
+    div.appendChild(button)
     div.appendChild(checkbox)
     div.appendChild(label)
     listTasksElement.appendChild(div)
@@ -87,6 +97,3 @@ form.addEventListener("submit", addTask)
 // Each new task added to the array should have the properties : task_id, text and done (a boolean - false by default).
 // Every new task object should have a task_id, starting from 0, and a data-task-id attribute, which value is the same as the task_id. Check out data-* attributes here.
 // Create a function named doneTask(), that as soon as the user clicks on the “checkbox” input, the done property should change from false to true in the object, and from black to crossed out red in the DOM.
-
-// BONUS II (not mandatory):
-// Create a function named deleteTask(), that as soon as the user clicks on the “X” button, delete that specific task from the array listTasks.
