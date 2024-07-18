@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+    text-align: center;
+    color: yellow;
+}
+
+#logoWrapper {
+    margin: auto;
+}
+
+#logoWrapper > img {
+    width: 40vw;
+}
+
+#infoWindow, button {
+    border: 3px solid;
+    border-radius: 5%;
+    border-color: yellow;
+}
+
+#infoWindow {
+    width: 40vw;
+    height: 30vh;
+    margin: auto;
+}
+
+#infoWindow > i {
+    /* hidden in the beginning */
+    display: none;
+    margin-top: 3vh;
+    font-size: 60px;
+    color: white;
+}
+
+#title {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#characterDetails {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+button {
+    margin-top: 10px;
+    height: 3vh;
+    font-weight: bold;
+}
