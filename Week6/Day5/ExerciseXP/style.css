@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: lightgreen;
+    padding: 10px;
+    min-height: 3vh;
+}
+
+nav > * {
+    vertical-align: middle;
+}
+
+
+#logoWrapper {
+    display: inline-block;
+    font-family: 'SEGA LOGO FONT', sans-serif;
+    font-size: x-large;
+}
+
+nav > form {
+    display: inline-block;
+    margin-left: 20vw;
+    color: gray;
+}
+
+nav > form > input {
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: large;
+    border: 0;
+    padding: 10px;
+    border-radius: 2%;
+    min-width: 20vw;
+}
+
+main {
+    height: 96vh;
+    background-image: URL("https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png");
+    background-color: mediumpurple;
+    margin: auto;
+}
+
+#robotsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4vw;
+    padding: 5vh 5vw 5vh 5vw;
+    justify-content:space-evenly;
+}
+
+.robot {
+    background-image: URL("https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/card-pattern.png   ");
+    background-color: aqua;
+    min-width: 24vh;
+    min-height: 30vh;
+    border-radius: 10px;
+    padding: 1vh;
+}
+
+.robot > img {
+    background-color: darkblue;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.robot > .title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.robot > .info {
+    font-size: large;
+}
