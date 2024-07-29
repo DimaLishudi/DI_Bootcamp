@@ -17,7 +17,7 @@ export class HTTPError extends Error {
 export class NotFoundError extends HTTPError {
     constructor(id, message = null) {
         if (message === null) {
-            message = `task #${id} Not Found`;
+            message = `Task #${id} Not Found`;
         }
         super(404, message);
     }
