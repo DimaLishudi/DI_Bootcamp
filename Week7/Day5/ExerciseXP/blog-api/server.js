@@ -45,7 +45,7 @@ app.post("/posts", createPost);
 app.put("/posts/:id", updatePost);
 app.delete("/posts/:id", deletePost);
 
-app.listen(5000)
+app.listen(5500)
 
 function returnBlog(req, res) {
     const id = req.params["id"];
