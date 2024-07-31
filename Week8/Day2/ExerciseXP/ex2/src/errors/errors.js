@@ -14,10 +14,10 @@ export class HTTPError extends Error {
     }
 }
 
-export class NotFoundError extends HTTPError {
+export class BookNotFoundError extends HTTPError {
     constructor(id, message = null) {
         if (message === null) {
-            message = `task #${id} Not Found`;
+            message = `Book #${id} Not Found`;
         }
         super(404, message);
     }
