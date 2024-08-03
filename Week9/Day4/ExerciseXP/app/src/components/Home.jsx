@@ -1,4 +1,4 @@
-export function Home() {
+export function HomeScreen() {
     return (
         <h1>
             Home
@@ -6,4 +6,4 @@ export function Home() {
     )
 }
 
-export default Home;
+export default HomeScreen;

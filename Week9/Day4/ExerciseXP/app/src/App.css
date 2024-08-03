@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+.active {
+  background-color: lightblue;
+  color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+
+nav * {
+  padding: 5px;
+}
