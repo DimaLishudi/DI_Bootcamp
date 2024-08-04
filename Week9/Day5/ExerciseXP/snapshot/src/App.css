@@ -1,0 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pexelLogo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.pexelLogo img {
+  width: 100px;
+}
+
+input {
+  min-height: 40px;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.imageGrid {
+  display: grid;
+  width: 80vw;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.imageGrid img {
+  width: 200px;
+  margin: auto;
+  will-change: transform;
+  transition: transform 250ms;
+}
+
+.imageGrid img:hover {
+  transform: scale(2);
+  z-index: 2;
+}

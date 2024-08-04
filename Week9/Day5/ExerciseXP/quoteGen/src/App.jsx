@@ -46,7 +46,6 @@ function App() {
       return;
     }
 
-    console.log(shuffled);
     const {quote, author} = shuffled.pop();
     setShuffled([...shuffled]);
     setState({
