@@ -3,7 +3,6 @@ import { toggleToDoAction, removeToDoAction } from "./ToDoSlice";
 
 export function ToDoElement({id}) {
     const {text, isCompleted} = useSelector((state) => state.todo.todos.find(value => value.id === id));
-    console.log(text, isCompleted);
     const dispatch = useDispatch();
 
     const remove = () => dispatch(removeToDoAction({id}));
