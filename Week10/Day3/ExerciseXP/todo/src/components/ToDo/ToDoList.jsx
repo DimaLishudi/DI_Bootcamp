@@ -10,7 +10,11 @@ function ToDoList() {
     const dispatch = useDispatch();
     const todoTextRef = useRef();
 
-    const addToDo = (text) => dispatch(addToDoAction({text}));
+    const addToDo = () => {
+        dispatch(addToDoAction({
+            text: todoTextRef.current.value
+        }))
+    };
 
     return (
         <div>
@@ -19,7 +23,7 @@ function ToDoList() {
             placeholder="Add a new todo"
             ref={todoTextRef}
         />
-        <button onClick={ () => addToDo(todoTextRef.current.value) }>Add Todo</button>
+        <button onClick={addToDo}>Add Todo</button>
         <ul>
         {
             todos?.map((todo) => (
