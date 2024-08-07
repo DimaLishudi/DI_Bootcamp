@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.uncompleted {
+  color: red;
+}
+
+.date {
+  font-size: xx-large;
+}
+
+.task li {
+  list-style-type:none;
+}
+
+.task input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.task input[type='text']:read-only {
+  background: none;
+  border-style: none;
+}

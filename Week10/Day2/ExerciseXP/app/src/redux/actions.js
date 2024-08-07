@@ -8,13 +8,13 @@ export function addToDoAction(text) {
 export function toggleToDoAction(id) {
     return {
         type: "toggle",
-        id: id,
+        id,
     }
 }
 
 export function removeToDoAction(id) {
     return {
         type: "remove",
-        id: id,
+        id,
     }
 }
