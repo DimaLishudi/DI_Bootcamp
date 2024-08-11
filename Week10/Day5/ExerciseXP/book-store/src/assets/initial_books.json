@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carrol",
+    "genre": "fantasy"
+  },
+  {
+    "id": 4,
+    "title": "IT",
+    "author": "Stephen King",
+    "genre": "horror"
+  },
+  {
+    "id": 5,
+    "title": "Harry Potter",
+    "author": "J.K. Rowling",
+    "genre": "fantasy"
+  },
+  {
+    "id": 6,
+    "title": "Solaris",
+    "author": "Stanislav Lem",
+    "genre": "science fiction"
+  }
+]
