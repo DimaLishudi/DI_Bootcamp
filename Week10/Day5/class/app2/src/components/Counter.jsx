@@ -1,10 +1,9 @@
 import { memo } from "react";
 import { useState, useMemo, useEffect } from 'react'
 
-function Counter() {
+function Counter({callback}) {
   const [count, setCount] = useState(0);
   const add = () => setCount(count + 1);
-  // const [res, setRes] = useState();
 
   const expensiveCalculation = (arg) => {
     console.log("called on", arg);
@@ -12,20 +11,36 @@ function Counter() {
     return arg + arg;
   }
 
-  // solution #1 (bad)
-  // const res = expensiveCalculation(count);
-
-  // solution #2 (memoized)
+  // solution #1
   const res = useMemo(
     () => expensiveCalculation(count),
     [count]
   );
 
-  // solution #3 (memoized)
+  // solution #2
+  // const [res, setRes] = useState();
   // useEffect(
   //   () => {setRes(expensiveCalculation(count))},
-  //   [count] 
+  //   [count]
   // )
+
+  // #2
+
+  function F(uid) {
+   useSelect(createSelector(
+    state => state.reducer.posts
+    // (state, id) => id]
+    , (posts, id) => {
+      return posts.filter(post => post.id === uid)
+    }));
+  }
+
+  selector(id);
+
+
+  // solution #2
+  const arg = useSelector(selector1);
+  const res = useMemo(callback, [arg]);
 
   console.log(res);
 
@@ -37,4 +52,4 @@ function Counter() {
   )
 }
 
-export default Counter;
+export default memo(Counter);
